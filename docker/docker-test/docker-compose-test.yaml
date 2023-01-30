@@ -1,0 +1,10 @@
+services:
+  db:
+    image: posges
+    volumes:
+      - ./html:/usr/local/apache2/htdocs/
+  web:
+    image: nginx
+
+volumes:
+  testvol:

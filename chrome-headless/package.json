@@ -1,0 +1,13 @@
+{
+  "name": "chrome-headless",
+  "version": "1.0.0",
+  "description": "Chrome Headless",
+  "main": "index.js",
+  "author": "KASI",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "chrome-launcher": "^0.8.0",
+    "puppeteer": "^0.11.0"
+  }
+}

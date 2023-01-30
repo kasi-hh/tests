@@ -1,0 +1,45 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+# get upload playListId
+GET https://www.googleapis.com/youtube/v3/channels?forUsername=DeutscheEuroShop&part=contentDetails&key=AIzaSyDCVvG0M2cwQj2QNMMxNG-chUed1LBOjLw
+Accept: application/json
+
+###
+
+# get playlistItems
+GET https://www.googleapis.com/youtube/v3/playlistItems?playlistId=UUhYcFiUy39OsU-g6y1JGAxg&part=id,contentDetails&maxResults=50&key=AIzaSyDCVvG0M2cwQj2QNMMxNG-chUed1LBOjLw
+Accept: application/json
+
+###
+
+# get playlistItems
+GET https://www.googleapis.com/youtube/v3/videos?id=GwxHf-9nRuM,L3AyvL0K7Rw&part=id,snippet,contentDetails,status&maxResults=50&key=AIzaSyDCVvG0M2cwQj2QNMMxNG-chUed1LBOjLw
+Accept: application/json
+
+###
+
+GET https://www.youtube.com/watch?v=0TcIgVlO-uU
+
+###
+
+GET https://www.googleapis.com/youtube/v3/playlists?part=id,snippet,contentDetails&mine=true&key=AIzaSyC4ZLFf6x2dwc3AL1sAzSY64ljinwoXLTo
+
+###
+
+GET https://www.youtube.com/channel/UC01_U3jcfPYZuyJbt9ZnPKA/videos
+
+###
+
+GET https://www.googleapis.com/youtube/v3/search?order=date&key=AIzaSyC4ZLFf6x2dwc3AL1sAzSY64ljinwoXLTo&channelId=UC01_U3jcfPYZuyJbt9ZnPKA&part=snippet,id&maxResults=50&type=video
+
+###
+
+GET https://arielgrafik.mite.yo.lk/customers.json
+X-MiteApiKey: 3ebd9534be8fb77
+
+###

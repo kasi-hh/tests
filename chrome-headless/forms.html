@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <style>
+        label span {
+            display:inline-block;
+            width:100px;
+            padding:5px;
+        }
+        ::-webkit-file-upload-button {
+            color:yellow;
+            background-color: #000;
+        }
+        ::-webkit-input-placeholder{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<form>
+<div class="row"><label for="input1"><span>Input 1</span><input id="input1" type="text" autocomplete="honorific-prefix"> </label></div>
+<div class="row"><label for="input2"><span>File</span><input id="input2" type="file"> </label></div>
+<div class="row"><label for="input3"><span>Placeholder</span><input id="input3" type="text" placeholder="Dies ist Text"> </label></div>
+<div class="row"><label for="input4"><span>Zip</span><input id="input4" type="text" placeholder="Dies ist Text"> </label></div>
+</form>
+<script type="text/javascript">
+    let el = document.getElementById('input4');
+    console.log('el',el);
+    el.addEventListener('keyup',(event)=>{
+        let elem = event.target;
+        console.log(elem.value, event);
+        elem.setCustomValidity(String(elem.value).length < 4 ? 'Noech immer kleiner 4' : '')
+        elem.reportValidity();
+    });
+</script>
+</body>
+</html>
